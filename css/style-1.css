@@ -1,5 +1,10 @@
 nav {
-    background-color: bisque;
+    background-color: #e67a7a;
+}
+nav a {
+    background-color: #e67a7a;
+    color: #fff4e1;
+    font-family: monospace;
 }
 header {
     background-color: #fff4e1;
@@ -17,6 +22,8 @@ h2 {
 }
 footer {
     background-color: #e67a7a;
+    color: #fff4e1;
+    font-family: monospace;
 }
 img {
     width: 300px;
@@ -25,4 +32,5 @@ img {
 section {
     display: inline-block;
     padding: 5px;
+    color: coral;
 }
