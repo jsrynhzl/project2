@@ -3,7 +3,11 @@
 }
 
 body, h1 {
-    margin: 0;
+    margin: 0px;
+}
+
+#welcomemessage, #hotitems, #customerreview {
+    padding-left: 10%;
 }
 
 header {
@@ -21,6 +25,7 @@ header, footer {
 header {
     background-color: #ffebb7;
 }
+
 
 main img {
     width: 300px;
