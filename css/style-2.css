@@ -1,0 +1,22 @@
+nav a {
+    font-family: "Century Gothic", serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Century Gothic", serif;
+    text-align: center;
+    background-color: #fff4e1;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: "Gabriola", sans-serif;
+}
+
+h3 {
+    font-family: "Gabriola", sans-serif;
+}
