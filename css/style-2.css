@@ -1,22 +1,90 @@
-nav a {
-    font-family: "Century Gothic", serif;
-    text-decoration: none;
+#pagecontainer {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+body, h1 {
+    margin: 0;
+}
+
+header {
+    background-image: url("../images/wrinkled.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 50px;
+}
+
+header, footer {
+    grid-column: 1 / -1;
+}
+
+header {
+    background-color: #ffebb7;
+}
+
+footer {
+    background-color: #ffebb7;
+    padding: 10px 10%;
+    margin-top: 20px;
 }
 
 h1 {
     font-family: "Century Gothic", serif;
     text-align: center;
-    background-color: #fff4e1;
+    margin: 0;
+    text-shadow: 5px 5px 10px white;
 }
 
 h1 a {
+    color: #e67a7a;
     text-decoration: none;
+    
 }
 
-h2 {
-    font-family: "Gabriola", sans-serif;
+h1 a:hover {
+    color: black;
 }
 
-h3 {
+#sidenav {
+    font-family: "Century Gothic", serif;
+    margin-right: 100;
+    border-right: 10px solid #9ddcdc;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+}
+
+#footernav a {
+    padding: 10px 20px;
+    display: block;
+    padding: 0;
+}
+
+footer > div {
+    display: inline-block;
+    width: 33%;
+}
+
+nav ul {
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+#wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+h2, h3 {
     font-family: "Gabriola", sans-serif;
+    color: #e67a7a;
 }
