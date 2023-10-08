@@ -1,5 +1,4 @@
 #pagecontainer {
-    display: grid;
     grid-template-columns: 200px auto;
 }
 
@@ -21,6 +20,15 @@ header, footer {
 
 header {
     background-color: #ffebb7;
+}
+
+main img {
+    width: 300px;
+    height: 300px;
+}
+
+section {
+    display: inline-block;
 }
 
 footer {
@@ -46,14 +54,11 @@ h1 a:hover {
     color: black;
 }
 
-
-img {
-    width: 300px;
-    height: 300px;
-}
-
-section {
-    display: inline-block;
+#topnav {
+    font-family: "Century Gothic", serif;
+    margin-bottom: 100;
+    border-bottom: 10px solid #9ddcdc;
+    text-align: center;
 }
 
 nav a {
@@ -82,11 +87,6 @@ nav ul {
 ul {
     padding: 0;
     list-style: none;
-}
-
-#wrapper {
-    width: 90%;
-    margin: auto;
 }
 
 h2, h3 {
