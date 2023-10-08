@@ -1,8 +1,14 @@
+nav, body, h1, h2 {
+    margin: 0;
+}
+main, h3 {
+    margin: 0;
+}
 nav {
-    background-color: #e67a7a;
+    background-color: #9ddcdc;
 }
 nav a {
-    background-color: #e67a7a;
+    background-color: #9ddcdc;
     color: #fff4e1;
     font-family: monospace;
 }
@@ -15,13 +21,22 @@ header {
 }
 main {
     background-color: #ffebb7;
+    color: darkorange;
+}
+#customerreview {
+    background-color: #e67a7a;
+    color: #fff4e1;
+}
+#customerreview h2 {
+    color: #fff4e1;
 }
 h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: coral;
+    font-style: oblique;
 }
 footer {
-    background-color: #e67a7a;
+    background-color: #9ddcdc;
     color: #fff4e1;
     font-family: monospace;
 }
@@ -32,5 +47,4 @@ img {
 section {
     display: inline-block;
     padding: 5px;
-    color: coral;
 }
