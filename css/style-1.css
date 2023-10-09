@@ -32,8 +32,23 @@ main img {
     height: 300px;
 }
 
+#hotitems img {
+    border: #e67a7a;
+    border-style: dotted;
+    border-radius: 30px;
+    margin-right: 3%;
+}
+
+#customerreview section {
+    border: #e67a7a;
+    border-style: dotted;
+    border-radius: 25px;
+    padding: 2%;
+}
+
 section {
     display: inline-block;
+    margin-right: 2%;
 }
 
 footer {
