@@ -15,7 +15,8 @@ body, h1 {
 }
 
 header {
-    background-image: url("../images/wrinkled.png");
+    background-image: url(../images/banner-3.JPG);
+    /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -37,7 +38,6 @@ header {
     padding: 3%;
     margin-right: 25%;
     color: #e67a7a;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
 }
 
@@ -87,8 +87,9 @@ footer {
 h1 {
     font-family: "Century Gothic", serif;
     text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 8px 8px 10px #ffebb7;
     margin: 0;
-    text-shadow: 8px 8px 10px white;
 }
 
 h1 a {
@@ -102,14 +103,33 @@ h1 a:hover {
 }
 
 #topnav {
-    font-family: "Century Gothic", serif;
     margin-bottom: 100;
     border-bottom: 10px solid #9ddcdc;
     text-align: center;
 }
 
-nav a {
+#topnav a {
+    display: inline-block;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #e67a7a;
+    text-shadow: 8px 8px 10px #ffebb7;
+}
+
+#topnav a:hover {
     color: black;
+    border-bottom: 3px solid #e67a7a;
+}
+
+li {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+p {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+nav a {
+    color: #e67a7a;
     text-decoration: none;
     display: inline-block;
     padding: 10px 40px 10px 40px;
@@ -121,6 +141,12 @@ nav a {
     padding: 10px 20px;
     display: block;
     padding: 0;
+    text-transform: none;
+    font-weight: 600;
+}
+
+#footernav a:hover {
+    text-decoration: underline;
 }
 
 footer > div {
@@ -138,6 +164,6 @@ ul {
 }
 
 h2, h3 {
-    font-family: "Gabriola", sans-serif;
+    font-family: "Garamond", sans-serif;
     color: #e67a7a;
 }
