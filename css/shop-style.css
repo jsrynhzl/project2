@@ -28,6 +28,7 @@ footer {
 
 #heroimg {
     border: 5px solid #9ddcdc;
+    border-radius: 30px;
 }
 
 h1 {
@@ -77,6 +78,7 @@ nav a {
 
 #manycakesimg {
     border: 5px solid #9ddcdc;
+    border-radius: 30px;
 }
 
 #footernav a {
