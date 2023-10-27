@@ -28,10 +28,10 @@ header, footer {
     grid-column: 1 / -1;
 }
 
-#welcomemessage p {
+#welcomemessage  {
     border: 5px solid #9ddcdc;
     border-style: double;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     padding: 3% 4%;
     color: #e67a7a;
     font-size: medium;
