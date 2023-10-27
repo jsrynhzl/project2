@@ -159,9 +159,6 @@ footer > div {
 
 nav ul {
     flex-direction: column;
-}
-
-ul {
     padding: 0;
     list-style: none;
 }
