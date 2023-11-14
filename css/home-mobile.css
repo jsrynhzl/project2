@@ -1,5 +1,8 @@
 #pagecontainer {
-    grid-template-columns: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 body, h1 {
@@ -7,8 +10,7 @@ body, h1 {
 }
 
 #wrapper {
-    width: 70%;
-    margin: auto;
+    margin: auto; 
 }
 
 #topnav {
@@ -22,10 +24,6 @@ header {
     background-position: center;
     margin: 0;
     padding: 50px;
-}
-
-header, footer {
-    grid-column: 1 / -1;
 }
 
 #welcomemessage  {
@@ -43,7 +41,9 @@ hr {
 }
 
 #hotitems section {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    /* display: inline-block; */
 }
 
 #hotitems img {
@@ -51,7 +51,8 @@ hr {
     height: 170px;
     border: 5px solid #9ddcdc;
     border-radius: 30px;
-    margin-right: 3%;
+    margin: 0 5% 5% 0;
+    /* margin-right: 3%; */
 }
 
 #hotitems p {
@@ -66,8 +67,8 @@ hr {
 }
 
 #customerreview img {
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     padding: 0;
     border: 5px solid #9ddcdc;
     border-radius: 25px;
@@ -75,11 +76,11 @@ hr {
 
 #customerreview {
     display: flex;
+    flex-direction: column;
 }
 
 .reviews {
     box-sizing: content-box;
-    width: 50%;
     padding: 2%;
     font-style: italic;
     color: #e67a7a;
@@ -121,7 +122,7 @@ h1 a:hover {
 }
 
 #topnav a {
-    display: inline-block;
+    display: block;
     font-family: "Trebuchet MS", sans-serif;
     letter-spacing: 3px;
     color: #e67a7a;
@@ -151,9 +152,8 @@ nav a {
 }
 
 #footernav a {
-    padding: 10px 20px;
+    padding: 5px 0; 
     display: block;
-    padding: 0;
     text-transform: none;
     font-weight: 600;
 }
@@ -162,16 +162,30 @@ nav a {
     text-decoration: underline;
 }
 
-footer > div {
-    display: inline-block;
-    width: 33%;
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    width: max-content;
+}
+
+footer ul li{
+    padding: 5px 0; 
 }
 
 nav ul {
-    flex-direction: column;
     padding: 0;
     list-style: none;
 }
+
+h2{
+    text-align: center;
+}
+
 
 h2, h3 {
     font-family: "Garamond", sans-serif;
