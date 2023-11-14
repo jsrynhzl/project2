@@ -1,0 +1,157 @@
+/* -------------------- LAYOUT FORMATTING ---------------------------------------- */
+
+#pagecontainer {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+#wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+body, h1 {
+    margin: 0;
+}
+
+#choosecolumns {
+    display: flex;
+}
+
+.choosecol {
+    width: 50%;
+}
+
+#feedbackcolumns {
+    display: flex;
+}
+
+.feedbackcol {
+    width: 50%;
+}
+
+header {
+    background-image: url(../images/banner-3.JPG);
+    /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
+    background-size: 100%;
+    background-position: center;
+    margin: 0;
+    padding: 50px;
+}
+
+header, footer {
+    grid-column: 1 / -1;
+}
+
+/* -------------------- NAVIGATION BAR ---------------------------------------- */
+
+#sidenav {
+    background-color: #fff4e1;
+    border-right: 10px solid #9ddcdc;
+    text-align: center;
+    margin-right: 100;
+}
+
+#sidenav a:hover {
+    color: black;
+    border-bottom: 3px solid #e67a7a;
+}
+
+#sidenav a {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #e67a7a;
+    text-shadow: 8px 8px 10px #ffebb7;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    font-weight: bolder;
+}
+
+nav ul {
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* -------------------- CONTENT ---------------------------------------- */
+
+#heroimg {
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+}
+
+h1 {
+    font-family: "Century Gothic", serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 8px 8px 10px #ffebb7;
+    margin: 0;
+}
+
+h1 a {
+    color: #e67a7a;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h1 a:hover {
+    color: black;
+}
+
+h2, h3 {
+    font-family: "Garamond", sans-serif;
+    color: #e67a7a;
+    font-weight: bolder;
+}
+
+.caketypeimg, .flavorimg {
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+}
+
+p {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+hr {
+    border: 3px solid #e67a7a;
+    margin: 50px 5px;
+}
+
+.star {
+    color: gold;
+}
+
+/* -------------------- FOOTER STYLES ---------------------------------------- */
+
+footer {
+    background-color: #ffebb7;
+    padding: 10px 10%;
+    margin-top: 20px;
+}
+
+footer > div {
+    display: inline-block;
+    width: 33%;
+}
+
+#footernav a {
+    padding: 10px 20px;
+    display: block;
+    padding: 0;
+    text-transform: none;
+    font-weight: 600;
+}
+
+#footernav a:hover {
+    text-decoration: underline;
+}
