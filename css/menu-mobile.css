@@ -34,8 +34,8 @@ header {
     /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
     background-size: 100%;
     background-position: center;
-    /* margin: 0; */
-    /* padding: 50px; */
+    background-color: white;
+    padding: none;
 }
 
 /* -------------------- NAVIGATION BAR ---------------------------------------- */
@@ -60,15 +60,14 @@ nav a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    padding: 10px 40px 10px 40px;
     font-weight: bolder;
 }
 
-nav ul {
+nav > ul {
     display: flex;
     flex-direction: column;
-    padding: 0;
     list-style: none;
+    padding: none;
 }
 
 li {
@@ -150,14 +149,16 @@ footer > div {
     flex-direction: column;
 }
 
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    width: max-content;
+}
+
 #footernav a {
     display: flex;
     flex-direction: column;
     padding: 0;
     text-transform: none;
     font-weight: 600;
-}
-
-#footernav a:hover {
-    text-decoration: underline;
 }

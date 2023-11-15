@@ -170,7 +170,6 @@ nav a {
 }
 
 #footernav a {
-    padding: 5px 0; 
     display: block;
     text-transform: none;
     font-weight: 600;
@@ -187,10 +186,6 @@ footer ul {
     list-style: none;
     padding-left: 0;
     width: max-content;
-}
-
-footer ul li{
-    padding: 5px 0; 
 }
 
 nav ul {
