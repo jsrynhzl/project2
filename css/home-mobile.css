@@ -125,10 +125,6 @@ h1 a {
     text-transform: uppercase;
 }
 
-h1 a:hover {
-    color: black;
-}
-
 #topnav {
     /* margin-bottom: 10px; */
     border-bottom: 10px solid #9ddcdc;
@@ -141,11 +137,6 @@ h1 a:hover {
     letter-spacing: 3px;
     color: #e67a7a;
     text-shadow: 8px 8px 10px #ffebb7;
-}
-
-#topnav a:hover {
-    color: black;
-    border-bottom: 3px solid #e67a7a;
 }
 
 li {
@@ -170,10 +161,6 @@ nav a {
     display: block;
     text-transform: none;
     font-weight: 600;
-}
-
-#footernav a:hover {
-    text-decoration: underline;
 }
 
 footer {
