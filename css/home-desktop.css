@@ -120,8 +120,8 @@ h1 a:hover {
     text-align: center;
 }
 
-#topnav a {
-    display: inline-block;
+#topnav ul li {
+    display: inline;
     font-family: "Trebuchet MS", sans-serif;
     letter-spacing: 3px;
     color: #e67a7a;
