@@ -130,7 +130,7 @@ textarea {
     display: inline-block;
     font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     height: 40px;
     line-height: 20px;
     list-style: none;
@@ -394,7 +394,6 @@ body.lb-disable-scrolling {
 .bx-wrapper img {
     max-width: 100%;
     display: block;
-    width: 200px;
 }
 
 .bxslider {
