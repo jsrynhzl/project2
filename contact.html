@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" media="screen" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact-style.css">
     <title>Bare Bakes</title>
 </head>
+
 <body>
     <nav id="topnav">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="order.html">Order</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <div id="pagecontainer">
@@ -19,70 +22,100 @@
             <h1>
                 <a href="index.html">
                     Bare
-                    <img src="images/title-icon.png" width="30" height="30" alt="A logo for Bare Bakes, a minimalist square-sliced cake">
+                    <img src="images/title-icon.png" width="30" height="30"
+                        alt="A logo for Bare Bakes, a minimalist square-sliced cake">
                     Bakes
                 </a>
             </h1>
         </header>
-    <main>
-        <div id="contactWay">
-            <section>
-                <h2>EMAIL</h2>
-                <p>✉</p>
-                <p><a href="emailto:barebakes@gmail.com">barebakes@gmail.com</a></p>    
-            </section>
-            <section>
-                <h2>PHONE NUMBER</h2>
-                <p>📞</p>
-                <p><a href="tel:1234567890">123-456-7890</a></p>    
-            </section>
-        </div>
+        <main>
+            <div id="wrapper">
+            <div id="contactWay">
+                <section>
+                    <h2>EMAIL<span id="icon">✉</span></h2>
+                    <p><a href="emailto:barebakes@gmail.com">barebakes@gmail.com</a></p>
+                </section>
+                <section>
+                    <h2>PHONE NUMBER<span id="icon">📞</span></h2>
+                    <p><a href="tel:1234567890">123-456-7890</a></p>
+                </section>
+            </div>
 
-        <form id="form" name="form" action="confirm.html" method="get"">
+            <form id="form" name="form" action="confirm.html" method="get"">
         
         <fieldset>
             <legend>Inquiry Form</legend>
             <div>
-                <label for="first_name">First name: </label>
+                <label for=" first_name">First name: </label>
                 <input type="text" id="first_name" name="first_name">
-            </div>
+    </div>
 
-            <div>
-                <label for="last_name">Last name: </label>
-                <input type="text" id="last_name" name="last_name">
-            </div>
+    <div>
+        <label for="last_name">Last name: </label>
+        <input type="text" id="last_name" name="last_name">
+    </div>
 
-            <div>
-                <label for="phone">Phone number: </label>
-                <input type="text" id="phone" name="phone">
-            </div>
+    <div>
+        <label for="phone">Phone number: </label>
+        <input type="text" id="phone" name="phone">
+    </div>
 
-            <div>
-                <label for="email">Email address: </label>
-                <input type="text" id="email" name="email">
-            </div>
+    <div>
+        <label for="email">Email address: </label>
+        <input type="text" id="email" name="email">
+    </div>
 
-            <div>
-                <label for="contact_way">Preferred contact method: </label>
-                <select id="contact_way" name="contact_way">
-                    <option value="phone">Via phone call</option>
-                    <option value="sms">Via SMS</option>
-                    <option>Via email</option>
-                </select>
-            </div>
+    <div>
+        <label for="contact_way">Preferred contact method: </label>
+        <select id="contact_way" name="contact_way">
+            <option value="phone">Via phone call</option>
+            <option value="sms">Via SMS</option>
+            <option>Via email</option>
+        </select>
+    </div>
 
-            <div>
-                <label for="message">Leave your message: </label>
-                <input type="text" id="message" name="message">
-            </div>
+    <div>
+        <label for="message">Leave your message: </label>
+        <input type="text" id="message" name="message">
+    </div>
 
-            <div class="button">
-                <label>&nbsp;</label>
-                <input type="submit" id="submit" value="SEND INQUIRY">
-            </div>
+    <div class="button">
+        <label>&nbsp;</label>
+        <input type="submit" id="submit" value="SEND INQUIRY">
+    </div>
 
-        </fieldset>
-        </form>
-    </main>    
+    </fieldset>
+    </form>
+    </div>
+    </main>
+    <footer>
+        <div class="footerpane">
+            <h3>Operating hours</h3>
+            <ul>
+                <li>Monday - Friday: 10am - 7pm</li>
+                <li>Saturday:&nbsp;10am - 5pm</li>
+                <li>Sunday:&nbsp;&nbsp;&nbsp;11am - 7pm</li>
+            </ul>
+        </div>
+        <div class="footerpane">
+            <h3>Locations</h3>
+            <ul>
+                <li>Vaughan Mills</li>
+                <li>Kensington Market</li>
+                <li>Niagara-on-the-Lake</li>
+            </ul>
+        </div>
+        <div class="footerpane">
+            <h3>Quick links</h3>
+            <nav id="footernav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
