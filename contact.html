@@ -37,6 +37,47 @@
                 <p><a href="tel:1234567890">123-456-7890</a></p>    
             </section>
         </div>
+
+        <form id="form" name="form" action="confirm.html" method="get"">
+        
+        <fieldset>
+            <legend>Inquiry Form</legend>
+            <div>
+                <label for="first_name">First name: </label>
+                <input type="text" id="first_name" name="first_name">
+            </div>
+
+            <div>
+                <label for="last_name">Last name: </label>
+                <input type="text" id="last_name" name="last_name">
+            </div>
+
+            <div>
+                <label for="phone">Phone number: </label>
+                <input type="text" id="phone" name="phone">
+            </div>
+
+            <div>
+                <label for="email">Email address: </label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="contact_way">Preferred contact method: </label>
+                <select id="contact_way" name="contact_way">
+                    <option value="phone">Via phone call</option>
+                    <option value="sms">Via SMS</option>
+                    <option>Via email</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Leave your message: </label>
+                <input type="text" id="message" name="message">
+            </div>
+
+        </fieldset>
+        </form>
     </main>    
 </body>
 </html>
