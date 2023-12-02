@@ -1,2 +1,2 @@
 @import url("contact-desktop.css") screen;
-@import url("contact-mobile.css") screen and (min-width: 0px) and (max-width: 768px);
+@import url("contact-mobile.css") screen and (min-width: 0px) and (max-width: 480px);
