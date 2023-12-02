@@ -28,19 +28,68 @@ header, footer {
     grid-column: 1 / -1;
 }
 
+#welcomemessage  {
+    border: 5px solid #9ddcdc;
+    border-style: double;
+    border-radius: 20px;
+    padding: 3% 4%;
+    color: #e67a7a;
+    font-size: medium;
+}
 
 hr {
     border: 3px solid #e67a7a;
     margin: 50px 5px;
 }
 
-
-
-footer {
-    background-color: #ffebb7;
-    padding: 10px 10%;
-    margin-top: 20px;
+#hotitems section {
+    display: inline-block;
 }
+
+#hotitems img {
+    width: 170px;
+    height: 170px;
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+    margin-right: 3%;
+}
+
+#hotitems p {
+    text-align: center;
+    color: #e67a7a;
+    font-style: oblique;
+    font-size: larger;
+}
+
+.star {
+    color: gold;
+}
+
+#customerreview img {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    border: 5px solid #9ddcdc;
+    border-radius: 25px;
+}
+
+#customerreview {
+    display: flex;
+}
+
+.reviews {
+    box-sizing: content-box;
+    width: 50%;
+    padding: 2%;
+    font-style: italic;
+    color: #e67a7a;
+}
+
+section {
+    margin-right: 2%;
+}
+
+
 
 h1 {
     font-family: "Century Gothic", serif;
@@ -67,8 +116,12 @@ h1 a:hover {
     text-align: center;
 }
 
-#topnav a {
-    display: inline-block;
+#topnav ul {
+    margin: 0;
+}
+
+#topnav ul li {
+    display: inline;
     font-family: "Trebuchet MS", sans-serif;
     letter-spacing: 3px;
     color: #e67a7a;
@@ -97,6 +150,28 @@ nav a {
     font-weight: bolder;
 }
 
+nav ul {
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+h2, h3 {
+    font-family: "Garamond", sans-serif;
+    color: #e67a7a;
+}
+
+footer {
+    background-color: #ffebb7;
+    padding: 10px 10%;
+    margin-top: 20px;
+}
+
+footer > div {
+    display: inline-block;
+    width: 33%;
+}
+
 #footernav a {
     padding: 10px 20px;
     display: block;
@@ -107,20 +182,4 @@ nav a {
 
 #footernav a:hover {
     text-decoration: underline;
-}
-
-footer > div {
-    display: inline-block;
-    width: 33%;
-}
-
-nav ul {
-    flex-direction: column;
-    padding: 0;
-    list-style: none;
-}
-
-h2, h3 {
-    font-family: "Garamond", sans-serif;
-    color: #e67a7a;
 }

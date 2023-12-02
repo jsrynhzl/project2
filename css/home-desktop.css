@@ -89,11 +89,7 @@ section {
     margin-right: 2%;
 }
 
-footer {
-    background-color: #ffebb7;
-    padding: 10px 10%;
-    margin-top: 20px;
-}
+
 
 h1 {
     font-family: "Century Gothic", serif;
@@ -118,6 +114,10 @@ h1 a:hover {
     margin-bottom: 100;
     border-bottom: 10px solid #9ddcdc;
     text-align: center;
+}
+
+#topnav ul {
+    margin: 0;
 }
 
 #topnav ul li {
@@ -150,6 +150,28 @@ nav a {
     font-weight: bolder;
 }
 
+nav ul {
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+h2, h3 {
+    font-family: "Garamond", sans-serif;
+    color: #e67a7a;
+}
+
+footer {
+    background-color: #ffebb7;
+    padding: 10px 10%;
+    margin-top: 20px;
+}
+
+footer > div {
+    display: inline-block;
+    width: 33%;
+}
+
 #footernav a {
     padding: 10px 20px;
     display: block;
@@ -160,20 +182,4 @@ nav a {
 
 #footernav a:hover {
     text-decoration: underline;
-}
-
-footer > div {
-    display: inline-block;
-    width: 33%;
-}
-
-nav ul {
-    flex-direction: column;
-    padding: 0;
-    list-style: none;
-}
-
-h2, h3 {
-    font-family: "Garamond", sans-serif;
-    color: #e67a7a;
 }

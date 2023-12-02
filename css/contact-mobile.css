@@ -1,0 +1,201 @@
+/* #pagecontainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* body, h1 {
+    margin: 0px;
+} */
+
+#pagecontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto; 
+}
+
+#topnav {
+    background-color: #fff4e1;
+    order: 0;
+}
+
+
+#footernav a:hover {
+    text-decoration: none;
+}
+
+#topnav a:hover {
+    /* color: black;
+    border-bottom: 3px solid #e67a7a; */
+    border-bottom: none;
+    color: #e67a7a;
+}
+
+#pagecontainer header {
+    background-image: url(../images/banner-3.JPG);
+    /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
+    background-size: 100%;
+    background-position: center;
+    margin: 0;
+    padding: 50px;
+    order: -1;
+}
+
+#welcomemessage  {
+    border: 5px solid #9ddcdc;
+    border-style: double;
+    border-radius: 20px;
+    padding: 3% 4%;
+    color: #e67a7a;
+    font-size: medium;
+}
+
+hr {
+    border: 3px solid #e67a7a;
+    margin: 50px 5px;
+}
+
+#hotitems section {
+    display: flex;
+    justify-content: center;
+    /* display: inline-block; */
+}
+
+#hotitems img {
+    width: 170px;
+    height: 170px;
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+    margin: 0 5% 5% 0;
+    /* margin-right: 3%; */
+}
+
+#hotitems p {
+    text-align: center;
+    color: #e67a7a;
+    font-style: oblique;
+    font-size: larger;
+}
+
+.star {
+    color: gold;
+}
+
+#customerreview img {
+    width: 180px;
+    height: 180px;
+    padding: 0;
+    border: 5px solid #9ddcdc;
+    border-radius: 25px;
+}
+
+#customerreview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews {
+    box-sizing: content-box;
+    padding: 2%;
+    font-style: italic;
+    color: #e67a7a;
+}
+
+section {
+    margin-right: 2%;
+}
+
+footer {
+    background-color: #ffebb7;
+    padding: 10px 10%;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: "Century Gothic", serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 8px 8px 10px #ffebb7;
+    margin: 0;
+}
+
+h1 a {
+    color: #e67a7a;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#topnav {
+    /* margin-bottom: 10px; */
+    border-bottom: 10px solid #9ddcdc;
+    text-align: center;
+}
+
+#topnav a {
+    display: block;
+    font-family: "Trebuchet MS", sans-serif;
+    letter-spacing: 3px;
+    color: #e67a7a;
+    text-shadow: 8px 8px 10px #ffebb7;
+}
+
+li {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+p {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+nav a {
+    color: #e67a7a;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#footernav a {
+    display: block;
+    text-transform: none;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    width: max-content;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+h2{
+    text-align: center;
+}
+
+
+h2, h3 {
+    font-family: "Garamond", sans-serif;
+    color: #e67a7a;
+}
