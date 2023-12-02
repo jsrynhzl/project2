@@ -79,37 +79,51 @@
                              alt="" />
                     </a>
                 </div>
+                <ul class="bxslider">
+                    <li><img src="images/chocolate.jpg" /></li>
+                    <li><img src="images/rainbow.jpg" /></li>
+                    <li><img src="images/redvelvet.JPG" /></li>
+                    <li><img src="images/mango.JPG" /></li>
+                </ul>
                 <div id="Summary">
-                    <table>
-                        <tr>
-                            <th><h3>Design</h3></th>
-                            <th><h3>Flavor</h3></th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>IMAGE SLIDER</td>
-                        </tr>
-                        <tr>
-                            <td><p><input type="radio" id="palette" name="design" value="Palette">Palette</p></td>
-                            <td><p><input type="radio" id="chocolate" name="flavor" value="Chocolate">Chocolate</p></td>
-                        </tr>
-                        <tr>
-                            <td><p><input type="radio" id="galaxy" name="design" value="Galaxy">Galaxy</p></td>
-                            <td><p><input type="radio" id="rainbow" name="flavor" value="Rainbow">Rainbow</p></td>
-                        </tr>
-                        <tr>
-                            <td><p><input type="radio" id="smiley" name="design" value="Smiley">Smiley</p></td>
-                            <td><p><input type="radio" id="redvelvet" name="flavor" value="Red velvet">Red velvet</p></td>
-                        </tr>
-                        <tr>
-                            <td><p><input type="radio" id="lover" name="design" value="Lover">Lover</p></td>
-                            <td><p><input type="radio" id="mango" name="flavor" value="Mango">Mango</p></td>
-                        </tr>
-                        <tr>
-                            <td><p><input type="radio" id="friends" name="design" value="Friends">Friends</p></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                    <form>
+                        <table>
+                            <tr>
+                                <th><h3>Design</h3></th>
+                                <th><h3>Dedication limit</h3></th>
+                                <th><h3>Flavor</h3></th>
+                            </tr>
+                            <tr>
+                                <td><p><input type="radio" id="palette" name="design" value="Palette">Palette</p></td>
+                                <td><p>Maximum 20 characters</p></td>
+                                <td><p><input type="radio" id="chocolate" name="flavor" value="Chocolate">Chocolate</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><input type="radio" id="galaxy" name="design" value="Galaxy">Galaxy</p></td>
+                                <td><p>Maximum 30 characters</p></td>
+                                <td><p><input type="radio" id="rainbow" name="flavor" value="Rainbow">Rainbow</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><input type="radio" id="smiley" name="design" value="Smiley">Smiley</p></td>
+                                <td><p>Cannot be added</p></td>
+                                <td><p><input type="radio" id="redvelvet" name="flavor" value="Red velvet">Red velvet</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><input type="radio" id="lover" name="design" value="Lover">Lover</p></td>
+                                <td><p>Maximum 10 characters</p></td>
+                                <td><p><input type="radio" id="mango" name="flavor" value="Mango">Mango</p></td>
+                            </tr>
+                            <tr>
+                                <td><p><input type="radio" id="friends" name="design" value="Friends">Friends</p></td>
+                                <td><p>Maximum 10 characters</p></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <label for="dedication_msg"><p>Dedication message</p></label>
+                        <textarea id="dedication_msg" name="dedication_msg" rows="3" cols="50" placeholder="Type what you want to be written on the cake"></textarea>
+                        <span id="charactersRemaining">180 characters left</span>
+                        <p><input type="button" id="submit" value="Submit order"></p>
+                    </form>
                 </div>
             </div>
         </main>
@@ -144,9 +158,13 @@
             </div>
         </footer>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- Lightbox script and JQuery version -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script> -->
+    <!-- Boxslider script and JQuery version -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/order.js"></script>
 </body>
 
 </html>
