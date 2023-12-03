@@ -1,15 +1,5 @@
-/* #pagecontainer {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
-/* body, h1 {
-    margin: 0px;
-} */
+/* -------------------- LAYOUT FORMATTING ---------------------------------------- */
 
 #pagecontainer{
     display: flex;
@@ -21,23 +11,6 @@
     margin: auto; 
 }
 
-#topnav {
-    background-color: #fff4e1;
-    order: 0;
-}
-
-
-#footernav a:hover {
-    text-decoration: none;
-}
-
-#topnav a:hover {
-    /* color: black;
-    border-bottom: 3px solid #e67a7a; */
-    border-bottom: none;
-    color: #e67a7a;
-}
-
 #pagecontainer header {
     background-image: url(../images/banner-3.JPG);
     /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
@@ -47,6 +20,31 @@
     padding: 50px;
     order: -1;
 }
+
+/* -------------------- NAVIGATION BAR ---------------------------------------- */
+
+#topnav {
+    background-color: #fff4e1;
+    order: 0;
+    border-bottom: 10px solid #9ddcdc;
+    text-align: center;
+}
+
+#topnav a {
+    display: block;
+    font-family: "Trebuchet MS", sans-serif;
+    letter-spacing: 3px;
+    color: #e67a7a;
+    text-shadow: 8px 8px 10px #ffebb7;
+}
+
+#footernav a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: #e67a7a;
+}
+
+/* -------------------- CONTENT ---------------------------------------- */
 
 #welcomemessage  {
     border: 5px solid #9ddcdc;
@@ -131,20 +129,6 @@ h1 a {
     text-transform: uppercase;
 }
 
-#topnav {
-    /* margin-bottom: 10px; */
-    border-bottom: 10px solid #9ddcdc;
-    text-align: center;
-}
-
-#topnav a {
-    display: block;
-    font-family: "Trebuchet MS", sans-serif;
-    letter-spacing: 3px;
-    color: #e67a7a;
-    text-shadow: 8px 8px 10px #ffebb7;
-}
-
 li {
     font-family: "Trebuchet MS", sans-serif;
 }
@@ -177,9 +161,11 @@ h2, h3 {
     color: #e67a7a;
 }
 
+/* -------------------- FOOTER STYLES ---------------------------------------- */
+
 footer {
     background-color: #ffebb7;
-    padding: 10px 10%;
+    padding: 10px 0;
     margin-top: 20px;
     display: flex;
     flex-direction: column;

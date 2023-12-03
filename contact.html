@@ -9,6 +9,8 @@
 </head>
 
 <body>
+</nav>
+<div id="pagecontainer">
     <nav id="topnav">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -16,8 +18,7 @@
             <li><a href="order.html">Order</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <div id="pagecontainer">
+        </nav>
         <header>
             <h1>
                 <a href="index.html">
@@ -42,35 +43,35 @@
                     </section>
                 </div>
 
-                <form id="form" name="form" onsubmit="" action="confirm.html" method="get">
+                <form id="form" name="form" action="confirm.html" method="get">
 
                     <fieldset>
                         <legend>
                             <h2>Inquiry Form</h2>
                         </legend>
 
-                        <div class="form_control">
+                        <div class="input_control">
                             <label for="first_name">First name: </label>
                             <input type="text" id="first_name" name="first_name">
-                            <div><small>Error message</small></div>
+                            <div class="error"></div>
                         </div>
                         
-                        <div class="form_control">
+                        <div class="input_control">
                             <label for="last_name">Last name: </label>
                             <input type="text" id="last_name" name="last_name">
-                            <div><small>Error message</small></div>
+                            <div class="error"></div>
                         </div>
 
-                        <div class="form_control">
+                        <div class="input_control">
                             <label for="phone">Phone number: </label>
                             <input type="text" id="phone" name="phone" placeholder="999-999-9999">
-                            <div><small>Error message</small></div>
+                            <div class="error"></div>
                         </div>
 
-                        <div class="form_control">
+                        <div class="input_control">
                             <label for="email">Email address: </label>
                             <input type="text" id="email" name="email">
-                            <div><small>Error message</small></div>
+                            <div class="error"></div>
                         </div>
 
                         <div>
@@ -87,9 +88,7 @@
                             <textarea id="message" name="message"></textarea>
                         </div>
 
-                        <div class="button">
-                            <input type="submit" id="submit" value="SEND INQUIRY">
-                        </div>
+                        <button type="submit">SEND INQUIRY</button>
 
                     </fieldset>
                 </form>
