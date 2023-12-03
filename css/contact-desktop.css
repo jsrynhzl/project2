@@ -156,7 +156,7 @@ select {
     font-size: 15px;
 }
 
-input[type=submit] {
+button[type=submit] {
     border-color: #e67a7a;
     background-color: #e67a7a;
     color: aliceblue;
@@ -176,46 +176,14 @@ textarea[name=message] {
     word-wrap: break-word;
 }
 
-.form_control small {
-    visibility: hidden;
+label {
+    color: #e67a7a;
+    font-size: large;
 }
 
-.form_control.error small {
-    visibility: visible;
+div.error {
     color: red;
-}
-
-/* -------------------- SUBMIT BUTTON STYLE ---------------------------------------- */
-#submit {
-    background-color: #EA4C89;
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-#submit:hover,
-#submit:focus {
-    background-color: #F082AC;
+    font-size: 10px;
 }
 
 /* -------------------- CONFIRM PAGE ---------------------------------------- */
