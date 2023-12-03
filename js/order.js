@@ -15,9 +15,9 @@ $(document).ready(function () {
         useCSS: false,
         ticker: true,
         tickerHover: true,
-        slideWidth: 300,
+        slideWidth: 250,
         responsive: false,
         minSlides: 1,
-        maxSlides: 4,
+        maxSlides: 5,
     });
 });

@@ -1,2 +1,2 @@
 @import url("order-desktop.css") screen;
-@import url("order-mobile.css") screen and (min-width: 0px) and (max-width: 480px);
+@import url("order-mobile.css") screen and (min-width: 0px) and (max-width: 768px);
