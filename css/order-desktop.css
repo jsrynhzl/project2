@@ -72,13 +72,23 @@ li {
 table {
     width: 100%;
     margin-top: 20px;
-    border: 2px solid #9ddcdc;
-    border-collapse: separate;
+    border: 3px solid #9ddcdc;
     text-align: center;
 }
 
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #ffebb7;
+    color: white;
+}
+
 tr {
-    background-color: #ade0e0;
+    background-color: #fff4e1;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 h1 {
@@ -119,39 +129,6 @@ textarea {
     margin-left: 20px;
 }
 
-/* -------------------- SUBMIT BUTTON STYLE ---------------------------------------- */
-#submit {
-    background-color: #EA4C89;
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    height: 40px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-#submit:hover,
-#submit:focus {
-    background-color: #F082AC;
-}
-
 /* -------------------- FOOTER STYLES ---------------------------------------- */
 
 footer {
@@ -178,6 +155,7 @@ footer > div {
 }
 
 /* ---------------------- LIGHTBOX STUFF CSS ---------------------- */
+
 .lb-loader,
 .lightbox {
     text-align: center;
@@ -384,7 +362,9 @@ body.lb-disable-scrolling {
 ===================================*/
 .bx-wrapper {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
     *zoom: 1;
     -ms-touch-action: pan-y;

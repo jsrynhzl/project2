@@ -37,7 +37,8 @@
 
         <main>
             <div id="wrapper">
-                <div>
+                <h2>Order details</h2>
+                <div id="lightbox-wrapper">
                     <a class="example-image-link"
                        href="images/palette.jpg"
                        data-lightbox="example-set"
@@ -65,7 +66,7 @@
                     <a class="example-image-link"
                        href="images/lover.jpg"
                        data-lightbox="example-set"
-                       data-title="Click anywhere outside the image or the X to the right to close.">
+                       data-title="Click anywhere outside the image to close.">
                         <img class="example-image"
                              src="images/thumb-lover.jpg"
                              alt="" />
@@ -79,53 +80,77 @@
                              alt="" />
                     </a>
                 </div>
-                
-                <div class="bxslider">
-                    <div><img src="images/chocolate.jpg" title="Chocolate" /></div>
-                    <div><img src="images/rainbow.jpg" title="Rainbow" /></div>
-                    <div><img src="images/redvelvet.JPG" title="Red velvet" /></div>
-                    <div><img src="images/mango.JPG" title="Mango" /></div>
-                </div>
 
                 <div id="Summary">
-                    <form>
-                        <table>
-                            <tr>
-                                <th><h3>Design</h3></th>
-                                <th><h3>Dedication limit</h3></th>
-                                <th><h3>Flavor</h3></th>
-                            </tr>
-                            <tr>
-                                <td><p><input type="radio" id="palette" name="design" value="Palette">Palette</p></td>
-                                <td><p>Maximum 20 characters</p></td>
-                                <td><p><input type="radio" id="chocolate" name="flavor" value="Chocolate">Chocolate</p></td>
-                            </tr>
-                            <tr>
-                                <td><p><input type="radio" id="galaxy" name="design" value="Galaxy">Galaxy</p></td>
-                                <td><p>Maximum 30 characters</p></td>
-                                <td><p><input type="radio" id="rainbow" name="flavor" value="Rainbow">Rainbow</p></td>
-                            </tr>
-                            <tr>
-                                <td><p><input type="radio" id="smiley" name="design" value="Smiley">Smiley</p></td>
-                                <td><p>Cannot be added</p></td>
-                                <td><p><input type="radio" id="redvelvet" name="flavor" value="Red velvet">Red velvet</p></td>
-                            </tr>
-                            <tr>
-                                <td><p><input type="radio" id="lover" name="design" value="Lover">Lover</p></td>
-                                <td><p>Maximum 10 characters</p></td>
-                                <td><p><input type="radio" id="mango" name="flavor" value="Mango">Mango</p></td>
-                            </tr>
-                            <tr>
-                                <td><p><input type="radio" id="friends" name="design" value="Friends">Friends</p></td>
-                                <td><p>Maximum 10 characters</p></td>
-                                <td></td>
-                            </tr>
-                        </table>
-                        <label for="dedication_msg"><h3>Dedication message</h3></label>
-                        <input type="text" id="dedication_msg" name="dedication_msg" maxlength="30" size="50" placeholder="Type what you want to be written on the cake"></textarea>
-                        <span id="charactersRemaining" >30 characters left</span>
-                        <p><input type="button" id="submit" value="Submit order"></p>
-                    </form>
+                    <table>
+                        <tr>
+                            <th><h3>Designs</h3></th>
+                            <th><h3>Variations</h3></th>
+                            <th><h3>Dedication limit</h3></th>
+                            <th><h3>Price</h3></th>
+                            <th><h3>Flavors<br>for all designs</h3></th>
+                        </tr>
+                        <tr>
+                            <td><p><b>Palette</b></p></td>
+                            <td>
+                                <p>Bright</p>
+                                <p>Nude</p>
+                            </td>
+                            <td><p>20 characters maximum</p></td>
+                            <td><p>$ 15</p></td>
+                            <td rowspan="6">
+                                <p>Chocolate</p>
+                                <p>Rainbow</p>
+                                <p>Red velvet</p>
+                                <p>Mango</p>
+                                <div class="bxslider">
+                                    <div><img src="images/chocolate.jpg"
+                                             title="Chocolate" /></div>
+                                    <div><img src="images/rainbow.jpg"
+                                             title="Rainbow" /></div>
+                                    <div><img src="images/redvelvet.JPG"
+                                             title="Red velvet" /></div>
+                                    <div><img src="images/mango.JPG"
+                                             title="Mango" /></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Galaxy</b></p></td>
+                            <td><p>- - -</p></td>
+                            <td><p>30 characters maximum</p></td>
+                            <td><p>$ 20</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Smiley</b></p></td>
+                            <td>
+                                <p>Happy</p>
+                                <p>Kiss</p>
+                            </td>
+                            <td><p>Cannot be added</p></td>
+                            <td><p>$ 15</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Lover</b></p></td>
+                            <td>
+                                <p>- - -</p>
+                            </td>
+                            <td><p>10 characters maximum</p></td>
+                            <td><p>$ 25</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Friends</b></p></td>
+                            <td><p>- - -</p></td>
+                            <td><p>10 characters maximum</p></td>
+                            <td><p>$ 15</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><b>Custom</b></p></td>
+                            <td><p>- - -</p></td>
+                            <td><p>Depends on custom design</p></td>
+                            <td><p>$ 20 - 25</p></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </main>
@@ -161,11 +186,12 @@
         </footer>
     </div>
     <!-- Lightbox script and JQuery version -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <!-- Boxslider script and JQuery version -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <!-- Order page's JavaScript -->
     <script src="js/order.js"></script>
 </body>
 

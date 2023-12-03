@@ -390,6 +390,7 @@ body.lb-disable-scrolling {
     *zoom: 1;
     -ms-touch-action: pan-y;
     touch-action: pan-y;
+    display: none;
 }
 
 .bx-wrapper img {
@@ -399,6 +400,7 @@ body.lb-disable-scrolling {
 }
 
 .bxslider {
+    display: none;
     margin: 0;
     padding: 0;
     /*fix flickering when used background-image instead of <img> (on Chrome)*/
