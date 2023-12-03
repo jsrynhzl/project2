@@ -1,29 +1,15 @@
+
 /* -------------------- LAYOUT FORMATTING ---------------------------------------- */
+
 #pagecontainer{
     display: flex;
     flex-direction: column;
 }
 
+
 #wrapper {
     width: 100%;
     margin: auto; 
-}
-
-#topnav {
-    background-color: #fff4e1;
-    order: 0;
-}
-
-
-#footernav a:hover {
-    text-decoration: none;
-}
-
-#topnav a:hover {
-    /* color: black;
-    border-bottom: 3px solid #e67a7a; */
-    border-bottom: none;
-    color: #e67a7a;
 }
 
 #pagecontainer header {
@@ -36,30 +22,37 @@
     order: -1;
 }
 
-#welcomemessage  {
-    border: 5px solid #9ddcdc;
-    border-style: double;
-    border-radius: 20px;
-    padding: 3% 4%;
-    color: #e67a7a;
-    font-size: medium;
+/* -------------------- NAVIGATION BAR ---------------------------------------- */
+
+
+#topnav {
+    background-color: #fff4e1;
+    order: 0;
+    border-bottom: 10px solid #9ddcdc;
+    text-align: center;
 }
+
+#topnav a {
+    display: block;
+    font-family: "Trebuchet MS", sans-serif;
+    letter-spacing: 3px;
+    color: #e67a7a;
+    text-shadow: 8px 8px 10px #ffebb7;
+}
+
+#footernav a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: #e67a7a;
+}
+
+/* -------------------- CONTENT ---------------------------------------- */
 
 hr {
     border: 3px solid #e67a7a;
     margin: 50px 5px;
 }
 
-
-section {
-    margin-right: 2%;
-}
-
-footer {
-    background-color: #ffebb7;
-    padding: 10px 10%;
-    margin-top: 20px;
-}
 
 h1 {
     font-family: "Century Gothic", serif;
@@ -74,20 +67,6 @@ h1 a {
     color: #e67a7a;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-#topnav {
-    /* margin-bottom: 10px; */
-    border-bottom: 10px solid #9ddcdc;
-    text-align: center;
-}
-
-#topnav a {
-    display: block;
-    font-family: "Trebuchet MS", sans-serif;
-    letter-spacing: 3px;
-    color: #e67a7a;
-    text-shadow: 8px 8px 10px #ffebb7;
 }
 
 li {
@@ -107,25 +86,6 @@ nav a {
     font-weight: bolder;
 }
 
-#footernav a {
-    display: block;
-    text-transform: none;
-    font-weight: 600;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-footer ul {
-    list-style: none;
-    padding-left: 0;
-    width: max-content;
-}
-
 nav ul {
     padding: 0;
     list-style: none;
@@ -139,4 +99,31 @@ h2{
 h2, h3 {
     font-family: "Garamond", sans-serif;
     color: #e67a7a;
+}
+
+
+
+/* -------------------- FOOTER STYLES ---------------------------------------- */
+
+footer {
+    background-color: #ffebb7;
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footernav a {
+    display: block;
+    text-transform: none;
+    font-weight: 600;
+}
+
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    width: max-content;
 }
