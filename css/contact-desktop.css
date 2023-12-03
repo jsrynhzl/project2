@@ -92,20 +92,9 @@ h1 a:hover {
     border-bottom: 3px solid #e67a7a;
 }
 
-fieldset {
-    border: 5px solid #9ddcdc;
-    border-radius: 30px;
-    color: #e67a7a;
-    margin-top: 20px;
+#email_icon {
+    font-size: 35px;
 }
-
-fieldset > div {
-    margin-bottom: 20px;
-    font-size: large;
-    font-weight: bold;
-    font-family: "Trebuchet MS", sans-serif;
-}
-
 
 li, p {
     font-family: "Trebuchet MS", sans-serif;
@@ -129,6 +118,70 @@ nav ul {
 h2, h3 {
     font-family: "Garamond", sans-serif;
     color: #e67a7a;
+}
+
+/* -------------------- FORM ---------------------------------------- */
+fieldset {
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+    color: #e67a7a;
+    margin-top: 20px;
+    padding: 30px 30px;
+}
+
+fieldset > div {
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+input[type=text] {
+    width: 90%;
+    border-color: #e67a7a;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+select {
+    border-color: #e67a7a;
+    color: #e67a7a;
+    height: 20px;
+    margin-left: 20px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    border-color: #e67a7a;
+    background-color: #e67a7a;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+}
+
+textarea[name=message] {
+    width: 90%;
+    height: 150px;
+    border: 2px solid #e67a7a;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+.form_control small {
+    visibility: hidden;
+}
+
+.form_control.error small {
+    visibility: visible;
+    color: red;
 }
 
 /* -------------------- FOOTER STYLES ---------------------------------------- */
