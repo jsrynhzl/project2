@@ -24,6 +24,7 @@ header {
     margin-bottom: 100;
     border-bottom: 10px solid #9ddcdc;
     text-align: center;
+    width: 100%;
 }
 
 #topnav ul {
@@ -184,6 +185,14 @@ textarea[name=message] {
     color: red;
 }
 
+/* -------------------- CONFIRM PAGE ---------------------------------------- */
+#confirm_message {
+    height: 350px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
 /* -------------------- FOOTER STYLES ---------------------------------------- */
 
 footer {
@@ -191,7 +200,6 @@ footer {
     width: 100%;
     display: flex;
     background-color: #ffebb7;
-    padding: 10px 10%;
     margin-top: 20px;
 }
 
