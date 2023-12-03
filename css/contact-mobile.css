@@ -1,16 +1,4 @@
-/* #pagecontainer {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* body, h1 {
-    margin: 0px;
-} */
-
+/* -------------------- LAYOUT FORMATTING ---------------------------------------- */
 #pagecontainer{
     display: flex;
     flex-direction: column;
@@ -62,53 +50,6 @@ hr {
     margin: 50px 5px;
 }
 
-#hotitems section {
-    display: flex;
-    justify-content: center;
-    /* display: inline-block; */
-}
-
-#hotitems img {
-    width: 170px;
-    height: 170px;
-    border: 5px solid #9ddcdc;
-    border-radius: 30px;
-    margin: 0 5% 5% 0;
-    /* margin-right: 3%; */
-}
-
-#hotitems p {
-    text-align: center;
-    color: #e67a7a;
-    font-style: oblique;
-    font-size: larger;
-}
-
-.star {
-    color: gold;
-}
-
-#customerreview img {
-    width: 180px;
-    height: 180px;
-    padding: 0;
-    border: 5px solid #9ddcdc;
-    border-radius: 25px;
-}
-
-#customerreview {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.reviews {
-    box-sizing: content-box;
-    padding: 2%;
-    font-style: italic;
-    color: #e67a7a;
-}
 
 section {
     margin-right: 2%;
