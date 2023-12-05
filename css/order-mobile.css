@@ -6,13 +6,27 @@
 }
 
 #wrapper {
-    width: 90%;
-    margin: auto;
+    width: 100%;
 }
 
-body,
-h1 {
-    margin: 0;
+#choosecolumns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.choosecol {
+    width: 100%;
+}
+
+#feedbackcolumns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedbackcol {
+    width: 100%;
 }
 
 header {
@@ -20,8 +34,8 @@ header {
     /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
     background-size: 100%;
     background-position: center;
-    margin: 0;
-    padding: 50px;
+    background-color: white;
+    padding: none;
 }
 
 /* -------------------- NAVIGATION BAR ---------------------------------------- */
@@ -31,12 +45,8 @@ header {
     border-bottom: 10px solid #9ddcdc;
     border-right: none;
     text-align: center;
-    margin-right: 100;
-}
-
-#sidenav a:hover {
-    color: black;
-    border-bottom: 3px solid #e67a7a;
+    display: flex;
+    flex-direction: column;
 }
 
 #sidenav a {
@@ -48,15 +58,16 @@ nav a {
     color: #e67a7a;
     text-shadow: 8px 8px 10px #ffebb7;
     text-decoration: none;
-    display: inline-block;
-    padding: 10px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
     font-weight: bolder;
 }
 
-nav ul {
+nav>ul {
+    display: flex;
     flex-direction: column;
-    padding: 0;
     list-style: none;
+    padding: none;
 }
 
 li {
@@ -65,16 +76,13 @@ li {
 
 /* -------------------- CONTENT ---------------------------------------- */
 
-table {
-    width: 100%;
-    margin-top: 20px;
-    border: 2px solid #9ddcdc;
-    border-collapse: separate;
+main {
+    justify-content: center;
     text-align: center;
 }
 
-tr {
-    background-color: #ade0e0;
+#heroimg {
+    display: none;
 }
 
 h1 {
@@ -83,17 +91,12 @@ h1 {
     text-align: center;
     letter-spacing: 5px;
     text-shadow: 8px 8px 10px #ffebb7;
-    margin: 0;
 }
 
 h1 a {
     color: #e67a7a;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-h1 a:hover {
-    color: black;
 }
 
 h2,
@@ -103,49 +106,33 @@ h3 {
     font-weight: bolder;
 }
 
+.caketypeimg,
+.flavorimg {
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+}
+
+.choosecol>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 p {
     font-family: "Trebuchet MS", sans-serif;
 }
 
-textarea {
-    resize: none;
+hr {
+    border: 3px solid #e67a7a;
+    margin: 50px 5px;
 }
 
-#charactersRemaining {
-    margin-left: 20px;
+.feedbackcol img {
+    width: 200px;
+    height: 200px;
 }
 
-/* -------------------- SUBMIT BUTTON STYLE ---------------------------------------- */
-#submit {
-    background-color: #EA4C89;
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    height: 50px;
-    line-height: 20px;
-    list-style: none;
-    margin: 0;
-    outline: none;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: color 100ms;
-    vertical-align: baseline;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-#submit:hover,
-#submit:focus {
-    background-color: #F082AC;
+.star {
+    color: gold;
 }
 
 /* -------------------- FOOTER STYLES ---------------------------------------- */
@@ -176,415 +163,4 @@ footer ul {
     padding: 0;
     text-transform: none;
     font-weight: 600;
-}
-
-/* ---------------------- LIGHTBOX STUFF CSS ---------------------- */
-.lb-loader,
-.lightbox {
-    text-align: center;
-    line-height: 0;
-    position: absolute;
-    left: 0
-}
-
-body.lb-disable-scrolling {
-    overflow: hidden
-}
-
-.lightboxOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    background-color: #000;
-    filter: alpha(Opacity=80);
-    opacity: .8;
-    display: none
-}
-
-.lightbox {
-    width: 100%;
-    z-index: 10000;
-    font-weight: 400;
-    outline: 0
-}
-
-.lightbox .lb-image {
-    display: block;
-    height: auto;
-    max-width: inherit;
-    max-height: none;
-    border-radius: 3px;
-    border: 4px solid #fff
-}
-
-.lightbox a img {
-    border: none
-}
-
-.lb-outerContainer {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    border-radius: 4px;
-    background-color: #fff
-}
-
-.lb-outerContainer:after {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.lb-loader {
-    top: 43%;
-    height: 25%;
-    width: 100%
-}
-
-.lb-cancel {
-    display: block;
-    width: 32px;
-    height: 32px;
-    margin: 0 auto;
-    background: url(../images/loading.gif) no-repeat
-}
-
-.lb-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 10
-}
-
-.lb-container>.nav {
-    left: 0
-}
-
-.lb-nav a {
-    outline: 0;
-    background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
-}
-
-.lb-next,
-.lb-prev {
-    height: 100%;
-    cursor: pointer;
-    display: block
-}
-
-.lb-nav a.lb-prev {
-    width: 34%;
-    left: 0;
-    float: left;
-    background: url(../images/prev.png) left 48% no-repeat;
-    filter: alpha(Opacity=0);
-    opacity: 0;
-    -webkit-transition: opacity .6s;
-    -moz-transition: opacity .6s;
-    -o-transition: opacity .6s;
-    transition: opacity .6s
-}
-
-.lb-nav a.lb-prev:hover {
-    filter: alpha(Opacity=100);
-    opacity: 1
-}
-
-.lb-nav a.lb-next {
-    width: 64%;
-    right: 0;
-    float: right;
-    background: url(../images/next.png) right 48% no-repeat;
-    filter: alpha(Opacity=0);
-    opacity: 0;
-    -webkit-transition: opacity .6s;
-    -moz-transition: opacity .6s;
-    -o-transition: opacity .6s;
-    transition: opacity .6s
-}
-
-.lb-nav a.lb-next:hover {
-    filter: alpha(Opacity=100);
-    opacity: 1
-}
-
-.lb-dataContainer {
-    margin: 0 auto;
-    padding-top: 5px;
-    width: 100%;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px
-}
-
-.lb-dataContainer:after {
-    content: "";
-    display: table;
-    clear: both
-}
-
-.lb-data {
-    padding: 0 4px;
-    color: #ccc
-}
-
-.lb-data .lb-details {
-    width: 85%;
-    float: left;
-    text-align: left;
-    line-height: 1.1em
-}
-
-.lb-data .lb-caption {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1em
-}
-
-.lb-data .lb-caption a {
-    color: #4ae
-}
-
-.lb-data .lb-number {
-    display: block;
-    clear: left;
-    padding-bottom: 1em;
-    font-size: 12px;
-    color: #999
-}
-
-.lb-data .lb-close {
-    display: block;
-    float: right;
-    width: 30px;
-    height: 30px;
-    background: url(../images/close.png) top right no-repeat;
-    text-align: right;
-    outline: 0;
-    filter: alpha(Opacity=70);
-    opacity: .7;
-    -webkit-transition: opacity .2s;
-    -moz-transition: opacity .2s;
-    -o-transition: opacity .2s;
-    transition: opacity .2s
-}
-
-.lb-data .lb-close:hover {
-    cursor: pointer;
-    filter: alpha(Opacity=100);
-    opacity: 1
-}
-
-/* ---------------------- BOXSLIDER STUFF CSS ---------------------- */
-/** VARIABLES
-===================================*/
-/** RESET AND LAYOUT
-===================================*/
-.bx-wrapper {
-    position: relative;
-    margin-bottom: 60px;
-    padding: 0;
-    *zoom: 1;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    display: none;
-}
-
-.bx-wrapper img {
-    max-width: 100%;
-    display: block;
-    width: 200px;
-}
-
-.bxslider {
-    display: none;
-    margin: 0;
-    padding: 0;
-    /*fix flickering when used background-image instead of <img> (on Chrome)*/
-    -webkit-perspective: 1000;
-}
-
-ul.bxslider {
-    list-style: none;
-}
-
-.bx-viewport {
-    /* fix other elements on the page moving (in Chrome) */
-    -webkit-transform: translateZ(0);
-}
-
-/** THEME
-===================================*/
-.bx-wrapper {
-    -moz-box-shadow: 0 0 5px #ccc;
-    -webkit-box-shadow: 0 0 5px #ccc;
-    box-shadow: 0 0 5px #ccc;
-    border: 5px solid #fff;
-    background: #fff;
-}
-
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
-    position: absolute;
-    bottom: -30px;
-    width: 100%;
-}
-
-/* LOADER */
-.bx-wrapper .bx-loading {
-    min-height: 50px;
-    background: url('images/bx_loader.gif') center center no-repeat #ffffff;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2000;
-}
-
-/* PAGER */
-.bx-wrapper .bx-pager {
-    text-align: center;
-    font-size: .85em;
-    font-family: Arial;
-    font-weight: bold;
-    color: #666;
-    padding-top: 20px;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a {
-    background: #666;
-    text-indent: -9999px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    outline: 0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
-    background: #000;
-}
-
-.bx-wrapper .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-    display: inline-block;
-    vertical-align: bottom;
-    *zoom: 1;
-    *display: inline;
-}
-
-.bx-wrapper .bx-pager-item {
-    font-size: 0;
-    line-height: 0;
-}
-
-/* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .bx-prev {
-    left: 10px;
-    background: url('images/controls.png') no-repeat 0 -32px;
-}
-
-.bx-wrapper .bx-prev:hover,
-.bx-wrapper .bx-prev:focus {
-    background-position: 0 0;
-}
-
-.bx-wrapper .bx-next {
-    right: 10px;
-    background: url('images/controls.png') no-repeat -43px -32px;
-}
-
-.bx-wrapper .bx-next:hover,
-.bx-wrapper .bx-next:focus {
-    background-position: -43px 0;
-}
-
-.bx-wrapper .bx-controls-direction a {
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    outline: 0;
-    width: 32px;
-    height: 32px;
-    text-indent: -9999px;
-    z-index: 9999;
-}
-
-.bx-wrapper .bx-controls-direction a.disabled {
-    display: none;
-}
-
-/* AUTO CONTROLS (START / STOP) */
-.bx-wrapper .bx-controls-auto {
-    text-align: center;
-}
-
-.bx-wrapper .bx-controls-auto .bx-start {
-    display: block;
-    text-indent: -9999px;
-    width: 10px;
-    height: 11px;
-    outline: 0;
-    background: url('images/controls.png') -86px -11px no-repeat;
-    margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-start:hover,
-.bx-wrapper .bx-controls-auto .bx-start.active,
-.bx-wrapper .bx-controls-auto .bx-start:focus {
-    background-position: -86px 0;
-}
-
-.bx-wrapper .bx-controls-auto .bx-stop {
-    display: block;
-    text-indent: -9999px;
-    width: 9px;
-    height: 11px;
-    outline: 0;
-    background: url('images/controls.png') -86px -44px no-repeat;
-    margin: 0 3px;
-}
-
-.bx-wrapper .bx-controls-auto .bx-stop:hover,
-.bx-wrapper .bx-controls-auto .bx-stop.active,
-.bx-wrapper .bx-controls-auto .bx-stop:focus {
-    background-position: -86px -33px;
-}
-
-/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
-    text-align: left;
-    width: 80%;
-}
-
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
-    right: 0;
-    width: 35px;
-}
-
-/* IMAGE CAPTIONS */
-.bx-wrapper .bx-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #666;
-    background: rgba(80, 80, 80, 0.75);
-    width: 100%;
-}
-
-.bx-wrapper .bx-caption span {
-    color: #fff;
-    font-family: Arial;
-    display: block;
-    font-size: .85em;
-    padding: 10px;
 }
