@@ -17,7 +17,7 @@ $(document).ready(function () {
         tickerHover: true,
         slideWidth: 250,
         responsive: false,
-        minSlides: 1,
-        maxSlides: 5,
+        minSlides: 4,
+        maxSlides: 4,
     });
 });

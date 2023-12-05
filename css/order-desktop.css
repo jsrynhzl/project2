@@ -8,6 +8,7 @@
 #wrapper {
     width: 90%;
     margin: auto;
+    margin-top: 50px;
 }
 
 body,
@@ -68,7 +69,6 @@ li {
 }
 
 /* -------------------- CONTENT ---------------------------------------- */
-
 table {
     width: 100%;
     margin-top: 20px;
