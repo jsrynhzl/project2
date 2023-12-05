@@ -159,10 +159,8 @@ h2, h3 {
 /* -------------------- FOOTER STYLES ---------------------------------------- */
 
 footer {
-    display: flex;
-    width: 100%;
-    display: flex;
     background-color: #ffebb7;
+    padding: 10px 10%;
     margin-top: 20px;
 }
 

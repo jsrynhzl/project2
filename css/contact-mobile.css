@@ -22,6 +22,15 @@
     order: -1;
 }
 
+#wrapper {
+    display: flex;
+    flex-flow: column;
+}
+
+.contactWay {order: 2;}
+
+form {order: 1;}
+
 /* -------------------- NAVIGATION BAR ---------------------------------------- */
 
 
@@ -53,7 +62,6 @@ hr {
     margin: 50px 5px;
 }
 
-
 h1 {
     font-family: "Century Gothic", serif;
     font-size: 40px;
@@ -69,11 +77,44 @@ h1 a {
     text-transform: uppercase;
 }
 
-li {
-    font-family: "Trebuchet MS", sans-serif;
+h1 a:hover {
+    color: black;
 }
 
-p {
+.contactWay {
+    float: none;
+}
+
+.contactWay section {
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+    width: 90%;
+    height: 130px;
+    margin-top: 20px;
+    margin: 20px 30px 20px 0;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.contactWay h2 {
+    text-align: left;
+}
+
+.contactWay a {
+    color: #e67a7a;
+    text-decoration: none;
+}
+
+.contactWay a:hover {
+    color: black;
+    border-bottom: 3px solid #e67a7a;
+}
+
+#email_icon {
+    font-size: 35px;
+}
+
+li, p {
     font-family: "Trebuchet MS", sans-serif;
 }
 
@@ -87,19 +128,89 @@ nav a {
 }
 
 nav ul {
+    flex-direction: column;
     padding: 0;
     list-style: none;
 }
-
-h2{
-    text-align: center;
-}
-
 
 h2, h3 {
     font-family: "Garamond", sans-serif;
     color: #e67a7a;
 }
+
+/* -------------------- FORM ---------------------------------------- */
+
+fieldset {
+    border: 5px solid #9ddcdc;
+    border-radius: 30px;
+    color: #e67a7a;
+    margin-top: 20px;
+    padding: 30px 30px;
+}
+
+fieldset > div {
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+input[type=text] {
+    width: 90%;
+    border-color: #e67a7a;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+select {
+    border-color: #e67a7a;
+    color: #e67a7a;
+    height: 20px;
+    margin-left: 20px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button[type=submit] {
+    border-color: #e67a7a;
+    background-color: #e67a7a;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+}
+
+textarea[name=message] {
+    width: 90%;
+    height: 150px;
+    border: 2px solid #e67a7a;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+label {
+    color: #e67a7a;
+    font-size: large;
+}
+
+div.error {
+    color: red;
+    font-size: 10px;
+}
+
+/* -------------------- CONFIRM PAGE ---------------------------------------- */
+#confirm_message {
+    height: 350px;
+    text-align: center;
+    padding-top: 100px;
+}
+
 
 
 
