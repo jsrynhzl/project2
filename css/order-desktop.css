@@ -130,28 +130,31 @@ textarea {
 }
 
 /* -------------------- FOOTER STYLES ---------------------------------------- */
-
 footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     background-color: #ffebb7;
-    padding: 10px 10%;
-    margin-top: 20px;
+    padding: none;
 }
 
 footer>div {
-    display: inline-block;
-    width: 33%;
+    flex: auto auto auto;
+    padding: 0 100px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+    width: max-content;
 }
 
 #footernav a {
-    padding: 10px 20px;
-    display: block;
     padding: 0;
     text-transform: none;
     font-weight: 600;
-}
-
-#footernav a:hover {
-    text-decoration: underline;
 }
 
 /* ---------------------- LIGHTBOX STUFF CSS ---------------------- */
