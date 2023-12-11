@@ -217,24 +217,34 @@ div.error {
 /* -------------------- FOOTER STYLES ---------------------------------------- */
 
 footer {
-    background-color: #ffebb7;
-    padding: 10px 0;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-color: #ffebb7;
+    padding: none;
+
 }
 
-#footernav a {
-    display: block;
-    text-transform: none;
-    font-weight: 600;
+footer > div {
+    flex: auto auto auto;
+    padding: 0 100px;
 }
 
+.footerpane>h3 {
+    text-align: center;
+}
 
 footer ul {
     list-style: none;
     padding-left: 0;
     width: max-content;
+    text-align: center;
+}
+
+#footernav a {
+    padding: 0;
+    text-transform: none;
+    font-weight: 600;
 }

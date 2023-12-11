@@ -199,29 +199,6 @@ div.error {
 
 /* -------------------- FOOTER STYLES ---------------------------------------- */
 
-/* footer {
-    background-color: #ffebb7;
-    padding: 10px 10%;
-    margin-top: 20px;
-}
-
-footer > div {
-    display: inline-block;
-    width: 33%;
-}
-
-#footernav a {
-    padding: 10px 20px;
-    display: block;
-    padding: 0;
-    text-transform: none;
-    font-weight: 600;
-}
-
-#footernav a:hover {
-    text-decoration: underline;
-} */
-
 footer {
     grid-area: footer;
     display: flex;
