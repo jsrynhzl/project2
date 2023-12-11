@@ -81,9 +81,9 @@ main {
     text-align: center;
 }
 
-/* #heroimg {
-    display: none;
-} */
+#heroimg {
+    margin: auto;
+}
 
 h1 {
     font-family: "Century Gothic", serif;

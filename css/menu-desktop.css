@@ -2,7 +2,11 @@
 
 #pagecontainer {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: auto 90%;
+    grid-template-areas:
+        "header header"
+        "sidenav content"
+        "footer footer";
 }
 
 #wrapper {
@@ -37,6 +41,7 @@ body, h1 {
 }
 
 header {
+    grid-area: header;
     background-image: url(../images/banner-3.JPG);
     /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
     background-size: 100%;
@@ -52,6 +57,7 @@ header, footer {
 /* -------------------- NAVIGATION BAR ---------------------------------------- */
 
 #sidenav {
+    grid-area: sidenav;
     background-color: #fff4e1;
     border-right: 10px solid #9ddcdc;
     text-align: center;
@@ -88,6 +94,9 @@ li {
 }
 
 /* -------------------- CONTENT ---------------------------------------- */
+main {
+    grid-area: content;
+}
 
 #heroimg {
     border: 5px solid #9ddcdc;
@@ -141,6 +150,7 @@ hr {
 
 /* -------------------- FOOTER STYLES ---------------------------------------- */
 footer {
+    grid-area: footer;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
