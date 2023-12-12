@@ -9,33 +9,18 @@
     width: 100%;
 }
 
-#choosecolumns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.choosecol {
-    width: 100%;
-}
-
-#feedbackcolumns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.feedbackcol {
-    width: 100%;
-}
-
 header {
-    background-image: url(../images/banner-3.JPG);
+    background-image: url(../images/banner-edited.JPG);
     /* Resource: https: //creativemarket.com/Nadia-nb/2358458-Baking-background-top-view-featuring-baking-baking-background-and-cooking */
     background-size: 100%;
     background-position: center;
     background-color: white;
     padding: none;
+}
+
+#wrapper .carousel .slide img {
+    width: 180px;
+    height: 160px;
 }
 
 /* -------------------- NAVIGATION BAR ---------------------------------------- */
@@ -81,10 +66,6 @@ main {
     text-align: center;
 }
 
-#heroimg {
-    display: none;
-}
-
 h1 {
     font-family: "Century Gothic", serif;
     font-size: 40px;
@@ -106,17 +87,6 @@ h3 {
     font-weight: bolder;
 }
 
-.caketypeimg,
-.flavorimg {
-    border: 5px solid #9ddcdc;
-    border-radius: 30px;
-}
-
-.choosecol>ul {
-    list-style: none;
-    padding-left: 0;
-}
-
 p {
     font-family: "Trebuchet MS", sans-serif;
 }
@@ -124,15 +94,6 @@ p {
 hr {
     border: 3px solid #e67a7a;
     margin: 50px 5px;
-}
-
-.feedbackcol img {
-    width: 200px;
-    height: 200px;
-}
-
-.star {
-    color: gold;
 }
 
 /* -------------------- FOOTER STYLES ---------------------------------------- */
