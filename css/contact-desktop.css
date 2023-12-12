@@ -203,12 +203,10 @@ footer {
     grid-area: footer;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #ffebb7;
-    padding: none;
-    margin-top: 40px;
 }
 
 footer > div {
@@ -226,4 +224,9 @@ footer ul {
     padding: 0;
     text-transform: none;
     font-weight: 600;
+}
+
+footer > p {
+    flex-basis: 100%;
+    text-align: center;
 }
