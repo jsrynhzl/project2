@@ -207,6 +207,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #ffebb7;
+    margin-top: 30px;
 }
 
 footer > div {
