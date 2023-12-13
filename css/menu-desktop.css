@@ -32,6 +32,10 @@ body, h1 {
     width: 50%;
 }
 
+.choosecol a {
+    text-decoration: none;
+}
+
 #feedbackcolumns {
     display: flex;
 }
