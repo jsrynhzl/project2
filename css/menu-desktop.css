@@ -100,6 +100,7 @@ li {
 /* -------------------- CONTENT ---------------------------------------- */
 main {
     grid-area: content;
+    display: flex;
 }
 
 #heroimg {

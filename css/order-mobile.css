@@ -64,6 +64,7 @@ li {
 main {
     justify-content: center;
     text-align: center;
+    display: flex;
 }
 
 h1 {
